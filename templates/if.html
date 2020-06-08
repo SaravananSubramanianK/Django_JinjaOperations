@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements Example</title>
+</head>
+<body>
+    <h1>Conditional Statements Opearations Using Jinja tags</h1>
+    <!--<h1>Sample If condition</h1>
+    {% if data %}
+        <h3>Inside if condition</h3>
+        {{data}}
+    {% endif %}-->
+
+    <!--<h1>Sample If-else condition</h1>
+    {% if data %}
+        <h3>Inside if condition</h3>
+        {{data}}
+    {% else %}
+        <h3>Inside else condition</h3>
+        <h3>Data is empty</h3>
+    {% endif %}-->
+
+    <!--<h1>Sample If-elif-else condition</h1>
+    {% if data %}
+        <h3>Inside if condition</h3>
+        {{data}}
+    {% elif data1 %}
+        <h3>Inside elif condition</h3>
+        {{data1}}
+        
+    {% else %}
+        <h3>Inside else condition</h3>
+        <h3>Data is empty</h3>
+    {% endif %}-->
+
+    <h1>Sample Nested-if condition</h1>
+    {% if data %}
+        <h3>Inside outer if condition</h3>
+        {{data}}
+        {% if data1 %}
+            <h3>Inside inner if condition</h3>
+            {{data1}}
+        {% endif %}
+    {% else %}
+        <h3>Inside else condition</h3>
+        <h3>Data is empty</h3>
+    {% endif %}
+
+    <h1>For forloop Example click below</h1>
+    <a href={% url "forloop" %} target="_blank">Click here</a>
+    
+</body>
+</html>
